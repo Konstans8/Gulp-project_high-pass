@@ -1,0 +1,400 @@
+.projects {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.projects__title {
+    @include fontTT;
+    @include h2-title;
+    color: $bgColor;
+    margin-bottom: 12px;
+}
+
+.media-1024 {
+    display: none;
+}
+
+.projects__all {
+    display: grid;
+    gap: 30px;
+}
+
+.projects__top {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.projects__item {
+    position: relative;
+    max-width: 190px;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            height: 100%;
+            max-width: 190px;
+            margin-top: 15px;
+
+            a {
+                @include fontRoboto;
+                @include cardDescr;
+                color: $bgColor;
+                margin-bottom: 15px;
+            }
+
+            .projects__data {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    display: block;
+                    width: 11.67px;
+                    height: 12.83px;
+                    margin-right: 5px;
+                    max-width: 100%;
+                }
+
+                .projects__data {
+                    @include fontRoboto;
+                    @include data;
+                }
+            }
+        }
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+.projects__item-max-tp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    // padding-right: calc(210px + 95 * (100vw - 1024px)/ 869);
+    grid-column: span 3;
+    background-image: url(/images/projects5.png);
+    background-repeat: no-repeat;
+
+    .projects__inside-content {
+        max-width: 300px;
+
+        h2 {
+            @include fontTT;
+            @include h2-title;
+            color: $text-color;
+            width: 210px;
+        }
+
+        .projects__descr {
+            @include fontRoboto;
+            @include cardDescr;
+            color: $text-color;
+        }
+
+        .projects__data {
+            display: flex;
+            align-items: center;
+
+            svg {
+                display: block;
+                width: 11.67px;
+                height: 12.83px;
+                margin-right: 5px;
+                max-width: 100%;
+            }
+
+            .projects__data {
+                @include fontRoboto;
+                @include data;
+            }
+        }
+    }
+
+    .projects__btn {
+        @include btnEmpty;
+        width: 125px;
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+
+
+.projects__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.projects__item-max-tp-bt {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    // padding-right: calc(210px + 95 * (100vw - 1024px)/ 869);
+    grid-column: span 3;
+    background-image: url(/images/projects5.png);
+    background-repeat: no-repeat;
+
+    .projects__inside-content {
+        max-width: 300px;
+
+        h2 {
+            @include fontTT;
+            @include h2-title;
+            color: $text-color;
+            width: 210px;
+        }
+
+        .projects__descr {
+            @include fontRoboto;
+            @include cardDescr;
+            color: $text-color;
+        }
+
+        .projects__data {
+            display: flex;
+            align-items: center;
+
+            svg {
+                display: block;
+                width: 11.67px;
+                height: 12.83px;
+                margin-right: 5px;
+                max-width: 100%;
+            }
+
+            .projects__data {
+                @include fontRoboto;
+                @include data;
+            }
+        }
+    }
+
+    .projects__btn {
+        @include btnEmpty;
+        width: 125px;
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+.projects__item-max-bt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    // padding-right: calc(210px + 95 * (100vw - 1024px)/ 869);
+    grid-column: span 2;
+    background-image: url(/images/projects4.png);
+    background-repeat: no-repeat;
+
+    .projects__inside-content {
+        max-width: 300px;
+
+        h2 {
+            @include fontTT;
+            @include h2-title;
+            color: $text-color;
+        }
+
+        .projects__descr {
+            @include fontRoboto;
+            @include cardDescr;
+            color: $text-color;
+        }
+
+
+        .projects__data {
+            display: flex;
+            align-items: center;
+
+            svg {
+                display: block;
+                width: 11.67px;
+                height: 12.83px;
+                margin-right: 5px;
+                max-width: 100%;
+            }
+
+            .projects__data {
+                @include fontRoboto;
+                @include data;
+            }
+        }
+    }
+
+    .projects__btn {
+        @include btnEmpty;
+        width: 125px;
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+.projects__item-bt-one {
+    position: relative;
+    // max-width: 300px;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            height: 100%;
+            max-width: 290px;
+            margin-top: 15px;
+
+            a {
+                @include fontRoboto;
+                @include cardDescr;
+                color: $bgColor;
+                margin-bottom: 15px;
+            }
+
+            .projects__data {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    display: block;
+                    width: 11.67px;
+                    height: 12.83px;
+                    margin-right: 5px;
+                    max-width: 100%;
+                }
+
+                .projects__data {
+                    @include fontRoboto;
+                    @include data;
+                }
+            }
+        }
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+
+.projects__item-bt-two {
+    position: relative;
+    // max-width: 300px;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+            height: 100%;
+            max-width: 290px;
+            margin-top: 15px;
+
+            a {
+                @include fontRoboto;
+                @include cardDescr;
+                color: $bgColor;
+                margin-bottom: 15px;
+            }
+
+            .projects__data {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    display: block;
+                    width: 11.67px;
+                    height: 12.83px;
+                    margin-right: 5px;
+                    max-width: 100%;
+                }
+
+                .projects__data {
+                    @include fontRoboto;
+                    @include data;
+                }
+            }
+        }
+    }
+
+    .projects__rectangle {
+        @include rectangle;
+        position: absolute;
+        align-self: flex-start;
+        top: 7px;
+        right: 7px;
+    }
+}
+
+

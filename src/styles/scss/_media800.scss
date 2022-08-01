@@ -1,0 +1,113 @@
+@media (max-width: 800px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .nav__media {
+        display: block;
+        background-color: #4A4A4A;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    @include fontTT;
+        
+                    &:hover {
+                        transition: 0.5s;
+                        color: #FF6E30;
+                    }
+        
+                    &:focus {
+                        color: #CE4307;
+                    }
+        
+                    &:active {
+                        color: $text-color;
+                        background-color: #BC572B;
+                    }
+            }
+        }
+
+    }
+
+
+    .hero__left {
+        background-image: url(/images/hero-left768.png);
+        padding-top: 260px;
+    }
+
+
+    .about__right {
+        form {
+            label {
+                max-width: 494px;
+                input {
+                    width: 330px;
+                }
+            }
+        }
+    }
+
+    .projects__top {
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+
+    .projects__item-media1024 {
+        grid-column: span 1;
+    }
+
+    .projects__bottom {
+        // gap: calc(16px + 15 * (100vw - 576px)/ 192);
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projects__item-max-tp-bt {
+        background-image: url(/images/projects5-768.png);
+    }
+
+    .projects__item-max-bt {
+        background-image: url(/images/projects4-768.png);
+    }
+
+    .projects__item-bt-one {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+
+    .projects__item-bt-two {
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+
+    
+
+    .contacts__form {
+        label {
+            input {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .contacts__textarea {
+        margin-bottom: 15px;
+    }
+
+    .footer__center {
+        display: none;
+    }
+
+}

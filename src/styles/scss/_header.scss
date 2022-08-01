@@ -1,0 +1,134 @@
+//header
+
+.header {
+    background-color: $bgColor;
+}
+
+.nav__media {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.nav__burger {
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: relative;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        
+        li:not(:last-child) {
+            margin-right: 77px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            @include fontTT;
+
+            &:hover {
+                transition: 0.5s;
+                color: #FF6E30;
+            }
+
+            &:focus {
+                color: #CE4307;
+            }
+
+            &:active {
+                color: $text-color;
+                background-color: #BC572B;
+            }
+        }
+        
+    }
+}
+
+.header__social-m {
+    display: flex;
+    align-items: center;
+
+    .header__btn-search {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            
+        }
+    }
+
+    .social-m-svg:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.header__search-container {
+    // display: none;
+    position: absolute;
+    right: -1px;
+    top: 27px;
+}
+
+
+.search__media-container {
+    display: none;
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+}
+
+.search__input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 130px;
+}
+
+.search__remove {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.contacts__btn-close-svg {
+    width: 30px;
+    height: 30px;
+
+}
+
+.open {
+    display: block;
+}

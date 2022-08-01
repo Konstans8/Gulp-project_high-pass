@@ -1,0 +1,94 @@
+@mixin rectangle {
+    @include fontRoboto();
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+    padding: 7px 15px;
+    background-color: $rectangleHashtag;
+}
+
+@mixin h2-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@mixin h2-subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+@mixin fontRoboto {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+@mixin fontTT {
+    font-family: 'TTF-Neue';
+    font-style: normal;
+}
+
+@mixin btnComplite {
+    padding: 15px 22px;
+    color: $text-color;
+    background-color: $btn-color;
+    border: none;
+    cursor: pointer;
+    @include fontRoboto();
+
+    &:hover {
+        background-color: #BC572B;
+    }
+
+    &:focus {
+        background-color: #CE4307;
+    }
+
+    &:active {
+        outline: 3px solid #CE4307;
+        background-color: $btn-color;
+    }
+}
+
+@mixin btnEmpty {
+    padding: 15px 22px;
+    color: $text-color;
+    background-color: transparent;
+    border: 2px solid $btn-color;
+    cursor: pointer;
+    @include fontRoboto();
+
+    &:hover {
+        background-color: $btn-color;
+    }
+
+    &:focus {
+        background-color: #CE4307;
+    }
+
+    &:active {
+        outline: 2px solid #CE4307;
+        background-color: $btn-color;
+    }
+}
+
+@mixin textDescr {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin cardDescr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@mixin data {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+}

@@ -1,0 +1,35 @@
+$bgColor: #202020;
+$rectangleHashtag: #333333;
+$btn-color: #FF6E30;
+$text-color: #ffffff;
+$text-greyColor: #CACACA;
+$maxWidthContainer: 1290px;
+$maxWidthImg: 100%;
+$border: 3px solid #FF6E30;
+$hover: #FF6E30;
+$focus: #BC572B;
+$active: #CE4307;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1290px;
+    margin: auto;
+}
