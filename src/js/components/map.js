@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var myPlacemark = new ymaps.Placemark([55.76963601332982,37.63668850000002], {}, {
                 iconLayout: 'default#image',
-                iconImageHref: './img/mdi_location_on.svg',
-                iconImageSize: [50, 66],
+                iconImageHref: '../images/Ellipse2.svg',
+                iconImageSize: [15, 15],
                 iconImageOffset: [-3, -42]
             });
 

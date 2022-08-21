@@ -1,13 +1,13 @@
 .projects {
-    padding-top: 68px;
-    padding-bottom: 68px;
+    padding-top: 71px;
+    padding-bottom: 64px;
 }
 
 .projects__title {
     @include fontTT;
     @include h2-title;
     color: $bgColor;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .projects__list {
@@ -21,9 +21,10 @@
   justify-content: flex-start;
   align-items: start;
   flex-direction: column;
+  max-height: 303px;
 
   .projects__card-img {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 
     .projects__img {
       width: 100%
@@ -61,8 +62,8 @@
     @include rectangle;
     position: absolute;
     align-self: flex-end;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 8px;
+    margin-right: 8px;
   }
 
 }
@@ -82,7 +83,7 @@
   .projects__card-container {
     display: flex;
     flex-direction: column;
-    padding: 0px 30px 25px 30px;
+    padding: 5px 30px 25px 30px;
     height: 300px;
     justify-content: space-between;
 
@@ -93,8 +94,10 @@
       h2 {
         @include fontTT;
         @include h2-title;
+        line-height: 26px;
         color: $text-color;
         width: 210px;
+        margin-bottom: 4px;
       }
 
       .projects__descr {
@@ -108,8 +111,16 @@
 
   .projects__btn {
     @include btnEmpty;
-    width: 125px;
+    width: 120px;
   }
+}
+
+.project__svg-max {
+  stroke: #fff;
+}
+
+.projects__data-max {
+  color: #fff !important;
 }
 
 

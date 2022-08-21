@@ -1,5 +1,5 @@
 .contacts {
-    padding-bottom: 68px;
+    padding-bottom: 63px;
 }
 
 .contacts__content-container {
@@ -27,15 +27,19 @@
         height: 460px;
     }
 
+    [class*="ground-pane"] {
+      filter: grayscale(1);
+    }
+
     .contacts__map {
         height: 460px;
-        width: 460px;
+        width: 408px;
         background-color: black;
         opacity: 0.7;
         position: absolute;
         top: 0px;
         display: none;
-        padding: 40px 30px;
+        padding: 17px 20px;
     }
 
     .open {
@@ -57,33 +61,35 @@
         padding: 0;
 
         svg {
-            width: 30px;
-            height: 30px;
+            width: 22px;
+            height: 22px;
         }
     }
 
     .contacts__map-cont-left {
       position: absolute;
-      bottom: 140px;
-      right: 90px;
+      bottom: 151px;
+      right: 75px;
     }
 
     h3 {
         @include fontTT;
-        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 4px;
         top: 170px;
         left: 70px;
         color: $text-color;
     }
 
     p {
-        margin-bottom: 10px;
+        margin-bottom: 4px;
         top: 200px;
         left: 70px;
         @include fontRoboto;
         color: #CACACA;
         max-width: 275px;
-        line-height: 30px;
+        line-height: 26px;
     }
 
     .contacts__btn-phone-svg {
@@ -109,7 +115,8 @@
 .contacts__form-title {
     @include fontRoboto;
     @include h2-subtitle;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    margin-top: -7px;
 }
 
 .contacts__form-descr {
@@ -133,7 +140,7 @@
         input {
             @include textDescr;
             @include fontRoboto;
-            padding: 20px;
+            padding: 15px 20px;
             background: #E9E9E9;
             outline: none;
             border: none;
@@ -151,31 +158,32 @@
 
     .contacts__btn {
         @include btnComplite;
+        font-size: 16px;
     }
 
 }
 
 .contacts__form-name {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contacts__form-email {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contacts__textarea {
     @include textDescr;
     @include fontRoboto;
-    height: 120px;
+    height: 150px;
     width: 100%;
     background: #E9E9E9;
     outline: none;
     border: none;
     resize: none;
     border-radius: 1px;
-    padding: 15px;
+    padding: 20px;
     color: $bgColor;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
 }
 
 textarea:hover::-webkit-input-placeholder {

@@ -74,7 +74,7 @@
     }
 
     .header__search-container {
-        top: 60px;
+        top: 98px;
     }
 
     .hero__container {
@@ -243,6 +243,10 @@
 
 
 @media (max-width: 400px) {
+    .header__search-input {
+      width: 150px;
+    }
+
     .hero__list {
         gap: 10px;
     }

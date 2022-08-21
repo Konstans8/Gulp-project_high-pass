@@ -1,0 +1,15 @@
+@media (max-width: 1120px) {
+
+  .header__nav {
+    padding-right: 0;
+  }
+
+  .header__nav ul li:not(:last-child) {
+    margin-right: 70px;
+  }
+
+  .footer__right {
+    margin-left: 0;
+}
+
+}

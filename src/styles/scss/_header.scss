@@ -33,6 +33,7 @@
 .header__nav {
     display: flex;
     align-items: center;
+    padding-right: 82px;
 
     ul {
         list-style: none;
@@ -40,7 +41,7 @@
         flex-wrap: wrap;
 
         li:not(:last-child) {
-            margin-right: 77px;
+            margin-right: 79px;
         }
 
         a {
@@ -112,7 +113,12 @@
     border: none;
     border-bottom: 1px solid white;
     color: white;
-    width: 130px;
+    width: 250px;
+    padding: 7px;
+}
+
+.header__search-input::placeholder {
+  color: #fff;
 }
 
 .header__search-remove {
@@ -133,4 +139,5 @@
 
 .open {
     display: block;
+    background: black;
 }

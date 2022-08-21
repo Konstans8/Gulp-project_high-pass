@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 127px;
 
     p {
         margin-bottom: 10px;
@@ -66,7 +67,7 @@
         &:active {
             fill: #BC572B;
         }
-        
+
     }
 
 }
