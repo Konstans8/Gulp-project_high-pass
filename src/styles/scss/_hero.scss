@@ -15,19 +15,21 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 380px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 70px;
     padding-right: calc(11px + 134 * (100vw - 1024px)/ 896);
     padding-bottom: calc(30px + 30 * (100vw - 1024px)/ 896);
     padding-left: calc(30px + 30 * (100vw - 1024px)/ 896);
     background: url(/images/hero-left.png) center/cover no-repeat;
 
-    p {
+    span {
         @include fontRoboto;
         @include textDescr;
         color: $text-color;
     }
 
-    h2 {
+    p {
         @include fontTT;
         font-weight: 700;
         font-size: 36px;

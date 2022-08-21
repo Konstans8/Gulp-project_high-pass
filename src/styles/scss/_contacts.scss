@@ -26,23 +26,29 @@
         max-width: 850px;
         height: 460px;
     }
-    
+
     .contacts__map {
         height: 460px;
-        width: 400px;
+        width: 460px;
         background-color: black;
         opacity: 0.7;
         position: absolute;
         top: 0px;
         display: none;
+        padding: 40px 30px;
     }
 
     .open {
         display: block;
     }
 
+    .contacts__map-cont-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     button {
-        position: absolute;
+
         left: 350px;
         top: 20px;
         border: none;
@@ -56,27 +62,34 @@
         }
     }
 
+    .contacts__map-cont-left {
+      position: absolute;
+      bottom: 140px;
+      right: 90px;
+    }
+
     h3 {
         @include fontTT;
-        position: absolute;
+        margin-bottom: 10px;
         top: 170px;
         left: 70px;
         color: $text-color;
     }
 
     p {
-        position: absolute;
+        margin-bottom: 10px;
         top: 200px;
         left: 70px;
         @include fontRoboto;
         color: #CACACA;
-        width: 275px;
+        max-width: 275px;
+        line-height: 30px;
     }
 
     .contacts__btn-phone-svg {
         width: 20px;
         height: 20px;
-        position: absolute;
+
         top: 270px;
         left: 70px;
     }
@@ -85,15 +98,12 @@
         @include fontRoboto;
         text-decoration: none;
         color: $btn-color;
-        position: absolute;
+
         top: 270px;
         left: 100px;
     }
 
 }
-
-
-
 
 
 .contacts__form-title {
@@ -118,17 +128,17 @@
 
     label {
         width: 100%;
+        position: relative;
 
         input {
             @include textDescr;
             @include fontRoboto;
-            padding: 15px;
+            padding: 20px;
             background: #E9E9E9;
             outline: none;
             border: none;
             border-radius: 1px;
             color: $bgColor;
-            margin-bottom: 30px;
             width: 100%;
 
         }
@@ -143,6 +153,14 @@
         @include btnComplite;
     }
 
+}
+
+.contacts__form-name {
+  margin-bottom: 30px;
+}
+
+.contacts__form-email {
+  margin-bottom: 30px;
 }
 
 .contacts__textarea {
@@ -162,4 +180,23 @@
 
 textarea:hover::-webkit-input-placeholder {
     color: $btn-color;
+}
+
+
+
+.just-validate-error-label {
+  @include fontTT;
+  color: rgb(184, 17, 17);
+  top: 2px;
+}
+
+
+.ymaps-2-1-79-controls-pane {
+  z-index: 0 !important;
+  display: none !important;
+}
+
+.ymaps-2-1-79-copyrights-pane {
+  z-index: 0 !important;
+  display: none !important;
 }

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const menu = document.querySelector('.nav__burger');
-    const add = document.querySelector('.burger');
-    const remove = document.querySelector('.burger__remove');
+    const menu = document.querySelector('.header__burger-container');
+    const add = document.querySelector('.header__burger');
+    const remove = document.querySelector('.header__burger-remove');
    
     add.addEventListener('click', function() {
         menu.classList.add('open');

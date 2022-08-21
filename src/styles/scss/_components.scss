@@ -30,6 +30,19 @@ a {
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 1350px;
     margin: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;  
+  height: 1px;  
+  margin: -1px;  
+  border: 0;  
+  padding: 0;
+  clip: rect(0, 0, 0, 0);  
+  overflow: hidden;
 }
